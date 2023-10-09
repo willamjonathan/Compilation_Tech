@@ -3,6 +3,8 @@ print("\t Calculator assignment")
 print("William Jonathan Mulyadi & Alexandro Joe Claudio")
 print("\n")
 
+# please access this link for prove of working code
+# https://github.com/willamjonathan/Compilation_Tech/tree/main/week4
 def userinput():
     print("Please input a mathematical equation!")
     user_input = input("Enter your expression: ")
@@ -11,11 +13,11 @@ def userinput():
 
 def scanner():
     # The map is for the all of the char from a to z is recognized as id
-    valid_identifiers = ['Celsius', 'Fahrenheit', 'Kelvin'] + list(map(chr, range(97, 123))) + list(map(chr, range(65, 91)))
+    # valid_identifiers = ['Celsius', 'Fahrenheit', 'Kelvin'] + list(map(chr, range(97, 123))) + list(map(chr, range(65, 91)))
     # Unidentified symbols
     unidentified_symbols = ['&', '@', '#','~','"',"'","?"]  
     tokens = {
-        **{var: 'id' for var in valid_identifiers},  
+        # **{var: 'id' for var in valid_identifiers},  
         ':=': 'assign',
         '(': 'lparen',
         ')': 'rparen',
@@ -52,10 +54,10 @@ def scanner():
                 if cur_token.isdigit():
                     nomor.append(int(cur_token))
                     input_token.append(('number', cur_token))
-                elif cur_token in valid_identifiers:
-                    input_token.append(('id', cur_token))
-                else:
+                elif cur_token in unidentified_symbols:
                     input_token.append(('unidentified', cur_token))
+                else:
+                    input_token.append(('id', cur_token))
                 cur_token = ''
             if char in tokens:
                 input_token.append((tokens[char], char))
@@ -64,10 +66,10 @@ def scanner():
         if cur_token.isdigit():
             nomor.append(int(cur_token))
             input_token.append(('number', cur_token))
-        elif cur_token in valid_identifiers:
-            input_token.append(('id', cur_token))
-        else:
+        elif cur_token in unidentified_symbols:
             input_token.append(('unidentified', cur_token))
+        else:
+            input_token.append(('id', cur_token))
 
     for i, (lexeme, token_value) in enumerate(input_token):
         if lexeme == 'number':
