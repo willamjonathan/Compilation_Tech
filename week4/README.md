@@ -7,6 +7,8 @@ I worked with my friend Alexandro Joe Claudio (2501963160).<br>
 We made 2 solutions 1 is named calculator-solution2.py (which is our main solution) <br>
 The second solution is just an alternate solution, however the multi-line comment is still on progress.<br>
 
+There is also proof of working code to show that the code is working.<br>
+
 
 <br>
 Thank you sir!<br>
