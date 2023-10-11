@@ -17,6 +17,7 @@ def userinput():
     global z
 
     print("Please input a mathematical equation!")
+    print("Write done if you want input to end!")
     response = []
     while True:
         user_input = input("Enter your expression: ")
