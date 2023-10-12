@@ -38,75 +38,75 @@ for eq in equations:
                 if any(c.isalpha() for c in token):
                     print(f"Unidentified token on Line {line_number}, Index {i+1} -> {token}")
                 else:
-                    print(token, "-> Number")
+                    print(token, "-> Number",eq[i])
                 i = j
 
             elif eq[i] == "+":
-                print(eq[i], "-> Addition")
+                print("Addition -> ",eq[i])
                 i += 1
 
             elif eq[i] == "-":
-                print(eq[i], "-> Subtraction")
+                print("Subtraction -> ",eq[i])
                 i += 1
 
             elif eq[i] == "*":
-                print(eq[i], "-> Multiplication")
+                print("Multiplication -> ",eq[i])
                 i += 1
 
             elif eq[i] == "(":
-                print(eq[i], "-> Left parantheses")
+                print( "-> Left parantheses -> ",eq[i])
                 i += 1
 
             elif eq[i] == ")":
-                print(eq[i], "-> Right parantheses")
+                print( "-> Right parantheses -> ",eq[i])
                 i += 1
             
             elif eq[i] == "[":
-                print(eq[i], "-> Left square bracket")
+                print( "-> Left square bracket -> ",eq[i])
                 i += 1
             
             elif eq[i] == "]":
-                print(eq[i], "-> Right square bracket")
+                print( "-> Right square bracket -> ",eq[i])
                 i += 1
 
             elif eq[i] == "!":
-                print(eq[i], "-> Factorial")
+                print( "-> Factorial -> ",eq[i])
                 i += 1
             
             elif eq[i] == "|":
-                print(eq[i], "-> Straigh bracket")
+                print( "-> Straigh bracket -> ",eq[i])
                 i += 1
             
             elif eq[i] == "%":
-                print(eq[i], "-> Percentage")
+                print( "-> Percentage -> ",eq[i])
                 i += 1
 
             elif eq[i] == '&':
-                print(eq[i], "-> Unidentified symbol")
+                print( "-> Unidentified symbol -> ",eq[i])
                 i += 1
             
             elif eq[i] == '@':
-                print(eq[i], "-> Unidentified symbol")
+                print( "-> Unidentified symbol -> ",eq[i])
                 i += 1
             
             elif eq[i] == '#':
-                print(eq[i], "-> Unidentified symbol")
+                print( "-> Unidentified symbol -> ",eq[i])
                 i += 1
             
             elif eq[i] == '~':
-                print(eq[i], "-> Unidentified symbol")
+                print( "-> Unidentified symbol -> ",eq[i])
                 i += 1
             
             elif eq[i] == '?':
-                print(eq[i], "-> Unidentified symbol")
+                print( "-> Unidentified symbol -> ",eq[i])
                 i += 1
 
             elif eq[i] == '"':
-                print(eq[i], "-> Unidentified symbol")
+                print("-> Unidentified symbol -> ",eq[i])
                 i += 1
             
             elif eq[i] == "'":
-                print(eq[i], "-> Unidentified symbol")
+                print("Unidentified symbol -> ", eq[i])
                 i += 1
 
             elif eq[i] == ":":
@@ -114,7 +114,7 @@ for eq in equations:
                     print(eq[i:i+2], "-> assign")
                     i += 2
                 else:
-                    print(eq[i], "-> Double dot")
+                    print( "-> Double dot")
                     i += 1
 
             elif eq[i] == "/":
@@ -125,19 +125,19 @@ for eq in equations:
                     i += 2
                     continue
                 elif i + 1 < len(eq) and eq[i + 1] == "/":
-                    print(eq[i:], "-> Comment")
+                    print(" Comment -> ", eq[i:])
                     break
                 elif i + 1 >= len(eq) or not (eq[i + 1].isnumeric() or eq[i + 1].isalpha()):
-                    print(eq[i], "-> Unidentified symbol")
+                    print(" Unidentified symbol ->",eq[i])
                 else:
-                    print(eq[i], "-> Division")
+                    print("Division -> ", eq[i])
                 i += 1
 
             elif eq[i].isalpha():
                 j = i
                 while j < len(eq) and (eq[j].isnumeric() or eq[j].isalpha()):
                     j += 1
-                print(f"{eq[i:j]} -> id")
+                print(f"id -> {eq[i:j]}")
                 i = j
                 
             else:
@@ -153,5 +153,7 @@ for eq in equations:
         if temp_multiline != []:
             # print(multiline, "-> Multi-line comment")
             temp_multiline.clear()
-    print(stores_multiline[line_number-2]," -> Multi-line comment")
+
+    if (stores_multiline[line_number-2]!=""):
+        print(" Multi-line comment ->",stores_multiline[line_number-2])
 
