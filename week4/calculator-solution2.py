@@ -115,6 +115,7 @@ for eq in equations:
                 if i + 1 < len(eq) and eq[i + 1] == "*":
                     is_multiple_line = True
                     temp_multiline.append("/")
+                    temp_multiline.append("*")
                     i += 2
                     continue
                 elif i + 1 < len(eq) and eq[i + 1] == "/":
@@ -142,5 +143,4 @@ for eq in equations:
         if temp_multiline != []:
             print(multiline, "-> Multi-line comment")
             temp_multiline.clear()
-
 
