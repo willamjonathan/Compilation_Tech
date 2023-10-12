@@ -2,6 +2,10 @@ equations = []
 multipleLine = []
 temp_multiline= []
 is_multiple_line = False
+
+stores_multiline = []
+# line_number = 1  # Initialize line number
+
 while True:
     eq = input("Input an equation (or 'exit' to finish): ")
     
@@ -9,6 +13,7 @@ while True:
         break
 
     equations.append(eq)
+    # line_number += 1  
 
 line_number = 1  # Initialize line number
 
@@ -17,6 +22,7 @@ for eq in equations:
     while i < len(eq):
         if is_multiple_line:
             temp_multiline.append(eq[i])
+            # stores_multiline.append(temp_multiline)
             i += 1
             if i < len(eq) and eq[i] == "*" and i + 1 < len(eq) and eq[i + 1] == "/":
                 is_multiple_line = False
@@ -136,11 +142,16 @@ for eq in equations:
                 
             else:
                 i += 1
-
-        line_number += 1  
+    
     multiline = ''.join(temp_multiline)
+    stores_multiline.append(multiline)
+    line_number +=1
+    temp_multiline.clear()
+    multiline =""
+
     if is_multiple_line == False:
         if temp_multiline != []:
-            print(multiline, "-> Multi-line comment")
+            # print(multiline, "-> Multi-line comment")
             temp_multiline.clear()
+    print(stores_multiline[line_number-2]," -> Multi-line comment")
 
