@@ -8,6 +8,7 @@ We made 2 solutions 1 is named calculator-solution2.py (which is our main soluti
 The second solution is just an alternate solution, however the multi-line comment is still on progress.<br>
 
 There is also proof of working code to show that the code is working.<br>
+<p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/week4/float.png" alt="willamjonathan" /> </p>
 
 
 <br>
