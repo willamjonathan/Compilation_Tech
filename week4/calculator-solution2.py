@@ -30,15 +30,33 @@ for eq in equations:
                 temp_multiline.append("/")
                 i += 2
         else:
-            if eq[i].isnumeric():
+            if eq[i].isnumeric() or (eq[i] == '.' and i + 1 < len(eq) and eq[i + 1].isnumeric()):
                 j = i
+                dot_check = 0
+                is_float = False
+                is_wrong = False
+                while j < len(eq) and (eq[j].isnumeric() or eq[j] == '.'):
+                    if eq[j] == '.':
+                        is_float = True
+                        dot_check += 1
+                        # if j+1 < len (eq):
+                        #     if not eq[j+1].isnumeric():
+                        #         is_wrong = True
+                    j += 1
+
                 while j < len(eq) and (eq[j].isnumeric() or eq[j].isalpha()):
                     j += 1
                 token = eq[i:j]
-                if any(c.isalpha() for c in token):
-                    print(f"Unidentified token on Line {line_number}, Index {i+1} -> {token}")
+                
+                if eq[j-1] =="." and dot_check>1:
+                    is_wrong=True
+                if any(c.isalpha() for c in token) or is_wrong:
+                        print(f"Unidentified token on Line {line_number}, Index {i+1} -> {token}")
                 else:
-                    print(token, "-> Number",eq[i])
+                    if is_float and (j >= len(eq) or not eq[j].isnumeric()):
+                        print("Float Number ->", token)
+                    else:
+                        print("Number ->", token)
                 i = j
 
             elif eq[i] == "+":
@@ -156,4 +174,3 @@ for eq in equations:
 
     if (stores_multiline[line_number-2]!=""):
         print(" Multi-line comment ->",stores_multiline[line_number-2])
-
