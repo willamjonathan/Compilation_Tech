@@ -9,7 +9,7 @@ The solution that we made is named parser.py  <br>
 <br>
 There is also proof of working code to show that the code is working.<br>
 
-<b>The proof of building parse tree (12), translated python program (80) & additional math operator (2)</b>
+## <b>The proof of building parse tree (12), translated python program (80) & additional math operator (2)</b>
 <p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/assignment2/poc/assignment2_proof.png" alt="willamjonathan" /> </p>
 <br>
 The proof of early detection error (10)
