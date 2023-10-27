@@ -21,7 +21,8 @@ There is also proof of working code to show that the code is working. <br>
 
 
 <br>
-Thank you sir!<br>
+<h1> Thank you sir! </h1>
+
 <br>
 Regards, <br>
 William Jonathan Mulyadi & Alexandro Joe Claudio<br>
