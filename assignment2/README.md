@@ -8,9 +8,9 @@ The solution that we made is named parser.py  <br>
 
 <br>
 There is also proof of working code to show that the code is working. <br>
-<h2> The proof and scoring: <br></h2>
+<h2> The proof and scoring:</h2>
 
-<h3> <b>Translated python program (80), the proof of building parse tree (12) & additional math operator (2)</b> </h3>
+<b>Translated python program (80), the proof of building parse tree (12) & additional math operator (2)</b>
 <p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/assignment2/poc/assignment2_proof.png" alt="willamjonathan" /> </p>
 <br>
 <b>The proof of early detection error (10)</b>
