@@ -4,7 +4,7 @@ My name is William Jonathan Mulyadi (2502045683) from L5AC and here is my soluti
 I worked with my friend Alexandro Joe Claudio (2501963160).<br>
 
 <br>
-The solution that we made is named parser.py  <br>
+The solution that we made is named assignment2_parser.py  <br>
 
 <br>
 We made all the tasks that is given and there is also proof of working code to show that the code is working. <br>
