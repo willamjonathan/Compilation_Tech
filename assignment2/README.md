@@ -16,7 +16,7 @@ We made all the tasks that is given and there is also proof of working code to s
 <p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/assignment2/poc/assignment2_proof2.png" alt="willamjonathan" /> </p>
 <b>The code for removing white space (2)</b>
 <p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/assignment2/poc/assignment2_whitespace.png" alt="willamjonathan" /> </p>
-<b>The drawing for legal and illegal string (2)</b>
+<b>The drawing for legal and illegal string (@2, 4)</b>
 <p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/assignment2/poc/assignment2_proof3.png" alt="willamjonathan" /> </p>
 
 
