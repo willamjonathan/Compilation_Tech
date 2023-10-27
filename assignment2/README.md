@@ -7,7 +7,7 @@ I worked with my friend Alexandro Joe Claudio (2501963160).<br>
 The solution that we made is named parser.py  <br>
 
 <br>
-There is also proof of working code to show that the code is working. <br>
+We made all the tasks that is given and there is also proof of working code to show that the code is working. <br>
 <h2> The proof and scoring (110):</h2>
 
 <b>Translated python program (80), the proof of building parse tree (12) & additional math operator (2)</b>
@@ -22,6 +22,8 @@ There is also proof of working code to show that the code is working. <br>
 
 <br>
 <h1> Thank you sir! </h1>
+
+Please let us know if there is any revision, we would be happy to fix it!
 
 <br>
 Regards, <br>
