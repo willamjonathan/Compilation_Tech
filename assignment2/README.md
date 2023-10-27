@@ -8,9 +8,10 @@ The solution that we made is named parser.py  <br>
 
 
 There is also proof of working code to show that the code is working.<br>
-<p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/assignment2/assignment2_proof.png" alt="willamjonathan" /> </p>
+<p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/assignment2/poc/assignment2_proof.png" alt="willamjonathan" /> </p>
 <br>
-<p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/week4/float.png" alt="willamjonathan" /> </p>
+
+<p align="left"> <img src="https://github.com/willamjonathan/Compilation_Tech/blob/main/assignment2/poc/assignment2_proof2.png" alt="willamjonathan" /> </p>
 
 
 <br>
